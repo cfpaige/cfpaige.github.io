@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cameron Paige</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-</head>
-<body>
-    <h1>Cameron Paige</h1>
-    <p>was here</p>
-</body>
-</html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Cameron Paige | Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	
+	<!-- ======================== HEADER ======================== -->
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<h1 class="main-title"><span class="thin">Cameron</span>Paige</h1>
+				</div>
+				<div class="codrops-top clearfix">
+					<a class="icon" href="#"><span>Resume</span></a>
+					<a class="icon" href="#"><span>Sandbox</span></a>
+				</div>
+
+	<!-- ================== PORTFOLIO CAROUSEL ================== -->
+				<div class="codrops-header">
+					<h1>PORTFOLIO</h1>
+					<div class="main-carousel" data-flickity='{"wrapAround": true}'>
+						<div class="carousel-cell"><iframe src="https://cfpaige.github.io/buddy-app/" width="900" height="500"></iframe></div>
+						<div class="carousel-cell"><iframe src="https://cfpaige.github.io/buddy-app/" width="900" height="500"></iframe></div>
+						<div class="carousel-cell"><iframe src="https://cfpaige.github.io/buddy-app/" width="900" height="500"></iframe></div>
+					</div>
+				</div>
+			</div>
+	
+	<!-- ======================== CREDITS ======================== -->
+			<p class="ref"><LABEL>Header image:</LABEL> <a href="http://www.astroeder.com/ic1805nb_eder_en.html">Center of Heart Nebula.</a> <LABEL>Credit and copyright:</LABEL> <a href="http://www.astroeder.com/">Ivan Eder.</a>
+			</p>
+		</div><!-- /container -->
+
+	<!-- ======================== SCRIPTS ======================== -->
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+		<script src="js/flickity.js"></script>
+	
+	</body>	
+	</html>
