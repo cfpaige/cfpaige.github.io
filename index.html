@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cameron Paige | Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cameron Paige</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/flickity.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+
 </head>
 
 <body>
 
 	<!-- ======================== HEADER ======================== -->
 	<div class="container demo-1">
-		<div class="content">
+		<div class="content" id="carousel-view">
 			<div id="large-header" class="large-header">
 				<canvas id="demo-canvas"></canvas>
 				<h1 class="main-title"><span class="thin">Cameron</span>Paige</h1>
 			</div>
 			<div class="codrops-top clearfix">
-				<a class="icon" href="#"><span>Resume</span></a>
-				<a class="icon" href="#"><span>Sandbox</span></a>
+				<a class="icon" id="expand-about" href="#full-about"><span>About</span></a>
+				<a class="icon" id="expand-portfolio" href="#full-portfolio"><span>Full Portfolio</span></a>
+				<a class="icon" id="expand-blog" href="#full-sandbox"><span>Sandbox</span></a>
 			</div>
 	
 			<!-- ================== PORTFOLIO CAROUSEL ================== -->
-			<div class="codrops-header" id="portfolio">
+			<div class="codrops-header" id="portfolio-carousel">
 				<h1>PORTFOLIO</h1>
 				<div class="main-carousel" data-flickity='{"wrapAround": true}'>
 					<div class="carousel-cell">
@@ -58,8 +56,25 @@
 			</div>
 		</div>
 	
-		<div class="codrops-header" id="resume" style="display: none">
-			<h1>RESUME</h1>
+		<div id="full-about">
+			<div class="codrops-header">
+				<h1>ABOUT</h1>
+			</div>
+			<div id="about-main"></div>
+		</div>
+		
+		<div id="full-portfolio">
+			<div class="codrops-header">
+				<h1>PORTFOLIO</h1>
+			</div>
+			<div id="project-cards"></div>
+		</div>
+		
+		<div id="full-blog">
+			<div class="codrops-header">
+				<h1>SANDBOX</h1>
+			</div>
+			<div id="blog-entries"></div>
 		</div>
 	
 		<!-- ======================== CREDITS ======================== -->
@@ -70,11 +85,14 @@
 	</div><!-- /container -->
 
 	<!-- ======================== SCRIPTS ======================== -->
+
 	<script src="js/TweenLite.min.js"></script>
 	<script src="js/EasePack.min.js"></script>
 	<script src="js/rAF.js"></script>
 	<script src="js/demo-1.js"></script>
 	<script src="js/flickity.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/subs.js"></script>
 
 </body>
 
